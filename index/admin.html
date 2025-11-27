@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Student Management</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f4f4; margin:0; padding:0; }
+    header { background:#2d3e50; color:white; padding:15px; text-align:center; }
+    .container { width:90%; margin:auto; padding:20px; }
+    .card { background:white; padding:20px; border-radius:10px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    h2 { color:#2d3e50; }
+    table { width:100%; border-collapse:collapse; margin-top:10px; }
+    table, th, td { border:1px solid #ccc; }
+    th, td { padding:10px; text-align:left; }
+    .btn { padding:8px 15px; border:none; border-radius:5px; cursor:pointer; }
+    .btn-add { background:#28a745; color:white; }
+    .btn-edit { background:#007bff; color:white; }
+    .btn-delete { background:#dc3545; color:white; }
+    .input-box { width:100%; padding:8px; margin:5px 0; border:1px solid #ccc; border-radius:5px; }
+  </style>
+</head>
+<body>
+
+<header><h1>Admin Panel</h1></header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Add Student</h2>
+    <input class="input-box" type="text" placeholder="Student Name" />
+    <input class="input-box" type="text" placeholder="Roll Number" />
+    <input class="input-box" type="text" placeholder="Branch" />
+    <button class="btn btn-add">Add Student</button>
+  </div>
+
+  <div class="card">
+    <h2>Student Records</h2>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Branch</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>Bala</td>
+        <td>22A91A05C1</td>
+        <td>CSE</td>
+        <td>
+          <button class="btn btn-edit">Edit</button>
+          <button class="btn btn-delete">Delete</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
